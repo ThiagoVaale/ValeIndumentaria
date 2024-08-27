@@ -1,0 +1,169 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(/img/imagen-pagina.jpg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* definimos el alto maximo de la pagina */
+}
+
+header{
+    background-color: #FAF3E0;
+    padding: 10px 55px;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: 90px;
+    box-sizing: border-box;
+    margin-bottom: 7rem;
+    >*{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+}
+
+.entonar{
+    font-weight: bold;
+}
+
+#segundoDiv a{
+    text-decoration: none; 
+    transition: 200ms;
+}
+
+#segundoDiv:hover{
+    transform: scale(1.05)
+}
+
+#primerDiv img{
+    width: 260px;
+    height: 280px;
+    padding-top: 1rem;
+    margin-right: 2px;
+}
+
+
+main{
+    flex: 1; /* Hace que el main ocupe todo el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px; 
+    margin-bottom: 3rem;
+}
+
+#titulo-outfit{
+    background-color: #faf3e0e0;
+    padding: 30px;
+    border-radius: 10px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Ajusta tamaño del contenedor del titulo y su parrafo*/
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+#titulo-outfit h1{
+    font-size: 3rem;
+    color: #2c3e50; /* USAR ESTE COLOR PARA LOS TITULOS DE LAS DESCRIPCIONES */
+    letter-spacing: 4px;
+    margin: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-family: sans-serif;
+}
+
+#titulo-outfit p{
+    font-size: 1.5rem;
+    margin-top: 15px; 
+    line-height: 1.5; /* Espaciado entre lineas */
+    font-family: serif;
+}
+
+#titulo-outfit p span{  
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.ropa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+    padding: 5px; 
+    flex-grow: 1;
+    margin-bottom: 0.5rem;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.9);
+    flex-basis: 150px; /* Nos permite cambiar el tamaño de las tarjetas */
+    transition: 100ms;
+}
+
+.ropa:hover{
+    transform: scale(1.05);
+}
+
+/* Aca abajo va a ir lo correspondiente a la segunda pagina. */
+
+#contenedor-outfit{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contenedor-outfit img{
+    width: 100%; /* hace que la imagen ocupe el 100% del contenedor. */
+    height: 100%; /* Mantiene la proporcion de la imagen. */
+    object-fit: cover; /* Nos cubre todo el contenedor con la medida necesarias para las imagenes */
+}
+
+.descripcion{
+    text-align: center;
+    padding: 10px;
+    background-color:#FAF3E0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.descripcion h2{
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #2c3e50;
+    font-family: sans-serif;
+}
+
+.descripcion p{
+    font-size: 1rem;
+    margin: 0;
+    color: black;
+    font-family: serif;
+}
+
+footer{
+    background-color: #FAF3E0;
+    padding: 10px 15px;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: auto; /* Nos situa el footer lo mas abajo de la pagina posible */
+    >*{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-left: 55px;
+        margin-right: 55px;
+    }
+}
